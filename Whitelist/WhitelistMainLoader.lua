@@ -1,6 +1,7 @@
 local HWIDTable = loadstring(game:HttpGet("https://raw.githubusercontent.com/suntisalts/WeshkyHub/refs/heads/main/Whitelist/Hwidlist.lua"))()
 local HWID = game:GetService("RbxAnalyticsService"):GetClientId()
 
+print("Loaded HWIDTable:", HWIDTable)
 local whitelisted = false
 
 for i, v in pairs(HWIDTable) do 
