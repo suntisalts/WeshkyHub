@@ -1,4 +1,4 @@
-local HWIDTable = loadstring(game:HttpGet("Insert Link Here"))()
+local HWIDTable = loadstring(game:HttpGet("https://raw.githubusercontent.com/suntisalts/WeshkyHub/refs/heads/main/Whitelist/Hwidlist.lua"))()
 local HWID = game:GetService("RbxAnalyticsService"):GetClientId()
 
 for i,v in pairs(HWIDTable) do 
