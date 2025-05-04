@@ -1,4 +1,4 @@
-# Weshky Hub Version 1.4
+# Weshky Hub Version 1.55
 <pre>loadstring(game:HttpGet("https://raw.githubusercontent.com/suntisalts/WeshkyHub/refs/heads/main/MainLoader.lua"))()</pre>
 https://discord.gg/Fx2SpRqk68
 
