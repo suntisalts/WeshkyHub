@@ -1,1 +1,1 @@
-setclipboard("https://discord.gg/... Please Wait we making a new Server Soon!!")
+setclipboard("https://discord.gg/mCRbBux3Ks")
