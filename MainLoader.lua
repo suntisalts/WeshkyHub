@@ -1,11 +1,35 @@
+local SUPPORTED_GAMES = {
+    [537413528] = "https://raw.githubusercontent.com/suntisalts/WeshkyHub/main/Main/Babft.lua",
+    [155615604] = "https://raw.githubusercontent.com/suntisalts/WeshkyHub/main/Main/Prisonlife.lua"
+}
+
+local function LoadScript(url)
+    local success, response = pcall(function()
+        local cacheBuster = "?t=" .. tick()
+        local fullUrl = url .. cacheBuster
+        
+        return loadstring(game:HttpGet(fullUrl, true))()
+    end)
+    
+    if not success then
+        warn("Failed to load script: " .. tostring(response))
+        return false
+    end
+    return true
+end
+
 local placeId = game.PlaceId
 
-if placeId == 537413528 then
+if SUPPORTED_GAMES[placeId] then
+    print("Weshky Hub: Loading script for game ID " .. placeId)
     task.wait(0.05)
-    loadstring(game:HttpGet(('https://raw.githubusercontent.com/suntisalts/WeshkyHub/refs/heads/main/Main/Babft.lua'),true))()
-elseif placeId == 155615604 then
-    task.wait(0.05)
-    loadstring(game:HttpGet(('https://raw.githubusercontent.com/suntisalts/WeshkyHub/refs/heads/main/Main/Prisonlife.lua'),true))()
+    
+    if not LoadScript(SUPPORTED_GAMES[placeId]) then
+        warn("Weshky Hub: Failed to load script for this game")
+    end
 else
-    print("Not Compatible")
+    warn(string.format(
+        "Weshky Hub: Game (PlaceID: %d) is not supported by this hub", 
+        placeId
+    ))
 end
