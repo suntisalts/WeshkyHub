@@ -1,11 +1,15 @@
 local placeId = game.PlaceId
+local Owner = "suntisalts" -- change if is a fork
+local Main = "https://raw.githubusercontent.com/".. Owner.. "/WeshkyHub/refs/heads/main/Main/"
 
-if placeId == 537413528 then
-    task.wait(0.05)
-    loadstring(game:HttpGet(('https://raw.githubusercontent.com/suntisalts/WeshkyHub/refs/heads/main/Main/Babft.lua'),true))()
-elseif placeId == 155615604 then
-    task.wait(0.05)
-    loadstring(game:HttpGet(('https://raw.githubusercontent.com/suntisalts/WeshkyHub/refs/heads/main/Main/Prisonlife.lua'),true))()
+local Places = {
+    [537413528] = Main.. "Babft.lua";
+    [155615604] = Main.. "Prisonlife.lua";
+}
+
+local link = Places[placeId]
+if link then
+    loadstring(game:HttpGet(link))()
 else
-    print("Not Compatible")
+    error("Error #1 - Unsupported place")
 end
