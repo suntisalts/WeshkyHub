@@ -1,6 +1,8 @@
 # ⛵️ Weshky Hub Version 1.7
 
-**📜 Load Weshky Hub:**
+### 📋 Supported Games: Build a Boat for Treasure, Prison Life
+
+### 📜 Load Weshky Hub:**
 ```
 loadstring(game:HttpGet("https://raw.githubusercontent.com/suntisalts/WeshkyHub/refs/heads/main/MainLoader.lua"))()
 ```
