@@ -1,4 +1,5 @@
 # Weshky Hub Version 1.7
+## 🛡️ Safe. Fast. Powerful.
 
 ### 📜 Load Weshky Hub:
 ```
