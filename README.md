@@ -1,13 +1,13 @@
 # ⛵️ Weshky Hub Version 1.7
 
-**📋 Supported Games: Build a Boat for Treasure, Prison Life**
+#### 📋 Supported Games: Build a Boat for Treasure, Prison Life
 
 ### 📜 Load Weshky Hub:
 ```
 loadstring(game:HttpGet("https://raw.githubusercontent.com/suntisalts/WeshkyHub/refs/heads/main/MainLoader.lua"))()
 ```
 
-### Features: 
+### 🛠️ Features: 
 - Auto Build
 - Image Loader
 - Autofarm
