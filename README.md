@@ -1,7 +1,7 @@
 # Weshky Hub Version 1.7
-## 🛡️ Safe. Fast. Powerful.
+### 🛡️ Safe. Fast. Powerful.
 
-### 📜 Load Weshky Hub:
+**📜 Load Weshky Hub:**
 ```
 loadstring(game:HttpGet("https://raw.githubusercontent.com/suntisalts/WeshkyHub/refs/heads/main/MainLoader.lua"))()
 ```
