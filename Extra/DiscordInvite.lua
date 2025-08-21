@@ -1,1 +1,1 @@
-setclipboard("https://discord.gg/mCRbBux3Ks")
+setclipboard("https://discord.gg/WHSTrRvG")
